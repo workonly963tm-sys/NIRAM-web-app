@@ -1,0 +1,283 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Nunito", ui-sans-serif, system-ui, sans-serif;
+
+  --color-saffron-50: #fff7ed;
+  --color-saffron-100: #ffedd5;
+  --color-saffron-200: #fed7aa;
+  --color-saffron-300: #fdba74;
+  --color-saffron-400: #fb923c;
+  --color-saffron-500: #f97316;
+  --color-saffron-600: #ea580c;
+  --color-saffron-700: #c2410c;
+
+  --color-cream-100: #fdfbf7;
+  --color-cream-200: #f9f5ec;
+  --color-cream-300: #f4f1de;
+  --color-cream-400: #ede8d3;
+  --color-cream-500: #e0d9c0;
+
+  --color-charcoal-300: #d1d5db;
+  --color-charcoal-400: #9ca3af;
+  --color-charcoal-500: #6b7280;
+  --color-charcoal-600: #4b5563;
+  --color-charcoal-700: #374151;
+  --color-charcoal-800: #2d3138;
+  --color-charcoal-900: #1f2329;
+
+  --color-sage-50: #f4f7f4;
+  --color-sage-100: #e3ece3;
+  --color-sage-400: #94b894;
+  --color-sage-600: #4d7c4d;
+  --color-sage-700: #3d633d;
+}
+
+body {
+  font-family: var(--font-sans);
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.card {
+  border-radius: 1.75rem;
+  background-color: #fdfbf7;
+  box-shadow: 0 4px 20px rgba(139, 110, 80, 0.1);
+}
+
+.btn-primary {
+  border-radius: 1.25rem;
+  background-color: #ea580c;
+  padding: 0.875rem 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  box-shadow: 0 4px 20px rgba(234, 88, 12, 0.25);
+  transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+  cursor: pointer;
+}
+
+.btn-primary:active {
+  transform: scale(0.95);
+}
+
+.btn-secondary {
+  border-radius: 1.25rem;
+  border: 2px solid #fed7aa;
+  background-color: transparent;
+  padding: 0.875rem 1.5rem;
+  font-weight: 600;
+  color: #c2410c;
+  transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+  cursor: pointer;
+}
+
+.btn-secondary:active {
+  transform: scale(0.95);
+}
+
+.pill {
+  border-radius: 9999px;
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+  cursor: pointer;
+}
+
+.shadow-card {
+  box-shadow: 0 4px 20px rgba(139, 110, 80, 0.1);
+}
+
+.shadow-lifted {
+  box-shadow: 0 8px 32px rgba(139, 110, 80, 0.14);
+}
+
+.shadow-saffron {
+  box-shadow: 0 4px 20px rgba(234, 88, 12, 0.25);
+}
+
+.shadow-soft {
+  box-shadow: 0 2px 12px rgba(139, 110, 80, 0.08);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Theme support */
+/* Gaming Theme */
+.theme-gaming {
+  background-color: #0f0e17;
+  color: #e0e0f0;
+}
+.theme-gaming .card {
+  background-color: #1a1929;
+  color: #e0e0f0;
+  border-color: rgba(16, 185, 129, 0.2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+.theme-gaming .bg-cream-100 {
+  background-color: #1a1929 !important;
+  color: #e0e0f0;
+}
+.theme-gaming .bg-cream-200 {
+  background-color: #232238 !important;
+  color: #e0e0f0;
+}
+.theme-gaming .bg-cream-300 {
+  background-color: #0f0e17 !important;
+}
+.theme-gaming .text-charcoal-900 {
+  color: #f4f4fa !important;
+}
+.theme-gaming .text-charcoal-800,
+.theme-gaming .text-charcoal-700,
+.theme-gaming .text-charcoal-600 {
+  color: #cbd5e1 !important;
+}
+.theme-gaming .text-charcoal-500,
+.theme-gaming .text-charcoal-400 {
+  color: #94a3b8 !important;
+}
+.theme-gaming .border-cream-400\/40,
+.theme-gaming .border-cream-300 {
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Fitness Theme */
+.theme-fitness {
+  background-color: #f0f4f1;
+}
+.theme-fitness .card {
+  background-color: #ffffff;
+  border-color: rgba(101, 163, 13, 0.2);
+  box-shadow: 0 4px 20px rgba(45, 80, 60, 0.08);
+}
+.theme-fitness .bg-cream-300 {
+  background-color: #f0f4f1 !important;
+}
+.theme-fitness .bg-cream-200 {
+  background-color: #e2e8e3 !important;
+}
+.theme-fitness .bg-cream-100 {
+  background-color: #ffffff !important;
+}
+
+/* Royal (Ayur Swarna) Theme */
+.theme-royal {
+  background-color: #0b111e;
+  color: #f1f5f9;
+}
+.theme-royal .card {
+  background-color: #131e31;
+  color: #f1f5f9;
+  border-color: rgba(245, 158, 11, 0.25);
+  box-shadow: 0 4px 24px rgba(11, 17, 30, 0.6);
+}
+.theme-royal .bg-cream-100 {
+  background-color: #131e31 !important;
+  color: #f1f5f9;
+}
+.theme-royal .bg-cream-200 {
+  background-color: #1c2b44 !important;
+  color: #f8fafc;
+}
+.theme-royal .bg-cream-300 {
+  background-color: #0b111e !important;
+}
+.theme-royal .text-charcoal-900 {
+  color: #fef3c7 !important;
+}
+.theme-royal .text-charcoal-800,
+.theme-royal .text-charcoal-700,
+.theme-royal .text-charcoal-600 {
+  color: #cbd5e1 !important;
+}
+.theme-royal .text-charcoal-500,
+.theme-royal .text-charcoal-400 {
+  color: #94a3b8 !important;
+}
+.theme-royal .border-cream-400\/40,
+.theme-royal .border-cream-300 {
+  border-color: rgba(245, 158, 11, 0.2) !important;
+}
+
+/* Lunar (Soma Lunar) Theme */
+.theme-lunar {
+  background-color: #0e121e;
+  color: #ede9fe;
+}
+.theme-lunar .card {
+  background-color: #181f33;
+  color: #ede9fe;
+  border-color: rgba(139, 92, 246, 0.25);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.45);
+}
+.theme-lunar .bg-cream-100 {
+  background-color: #181f33 !important;
+  color: #ede9fe;
+}
+.theme-lunar .bg-cream-200 {
+  background-color: #232c47 !important;
+  color: #f3f0ff;
+}
+.theme-lunar .bg-cream-300 {
+  background-color: #0e121e !important;
+}
+.theme-lunar .text-charcoal-900 {
+  color: #ede9fe !important;
+}
+.theme-lunar .text-charcoal-800,
+.theme-lunar .text-charcoal-700,
+.theme-lunar .text-charcoal-600 {
+  color: #c4b5fd !important;
+}
+.theme-lunar .text-charcoal-500,
+.theme-lunar .text-charcoal-400 {
+  color: #a78bfa !important;
+}
+.theme-lunar .border-cream-400\/40,
+.theme-lunar .border-cream-300 {
+  border-color: rgba(139, 92, 246, 0.2) !important;
+}
+
+/* Terracotta Theme */
+.theme-terracotta {
+  background-color: #fff6ed;
+}
+.theme-terracotta .card {
+  background-color: #ffede1;
+  border-color: rgba(194, 65, 12, 0.2);
+  box-shadow: 0 4px 20px rgba(194, 65, 12, 0.08);
+}
+.theme-terracotta .bg-cream-300 {
+  background-color: #fff6ed !important;
+}
+.theme-terracotta .bg-cream-200 {
+  background-color: #ffe3d1 !important;
+}
+.theme-terracotta .bg-cream-100 {
+  background-color: #ffede1 !important;
+}
+.theme-terracotta .text-charcoal-900 {
+  color: #431407 !important;
+}
+.theme-terracotta .text-charcoal-800,
+.theme-terracotta .text-charcoal-700 {
+  color: #7c2d12 !important;
+}
+.theme-terracotta .text-saffron-600 {
+  color: #c2410c !important;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "NIRAM",
+  "description": "NIRAM — Vedic Intelligence & Health Dashboard. Ancient Wisdom. Smart Fitness. Better Wellness. Dosha Prakriti assessment, Vedic Bhojan nutrition, Netra AI wellness scanners, and smart habit tracking.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
