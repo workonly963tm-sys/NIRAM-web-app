@@ -2,7 +2,6 @@
 
 **Ancient Wisdom. Smart Fitness. Better Wellness.**
 
-🔗 Live App: [niram-studio.ai.studio](https://niram-studio.ai.studio)
 
 > NIRAM is not another "readymade remedy" app. It listens to your body first, diagnoses the *root cause* using Ayurveda, and only then prescribes a natural, personalized path back to health.
 
